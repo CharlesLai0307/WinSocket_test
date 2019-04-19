@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApplication2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="500">
+    <Window.Resources>
+        
+    </Window.Resources>
+    <Grid>
+        <TextBox x:Name="TextUrl" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Margin="13,10,0,0" Text="{Binding textURL,FallbackValue=ws://172.16.10.146:7077/frs/ws/fcsreconizedresult}"/>
+        <Button x:Name="btnStart" Content="start" Width="75"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BtnStart" Margin="323,10,0,0"/>
+        <Button x:Name="btnStop" Content="stop" Width="75"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BtnStop" Margin="323,41,0,0" />
+        <TextBox x:Name="TextSessionID" HorizontalAlignment="Left" Height="23" Margin="10,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
+        <Button x:Name="btnconnect" Content="connect" Width="75" Margin="322,72,0,0" Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BtnConnect"/>
+        <TextBlock x:Name="messagelog" HorizontalAlignment="Left" Margin="10,100,0,0" TextWrapping="Wrap" Text="{Binding MessageLog}" VerticalAlignment="Top" Height="121" Width="300" />
+        <Button x:Name="btnclear" Content="Clear" HorizontalAlignment="Left" Margin="322,202,0,0" VerticalAlignment="Top" Width="75" Click="BtnClear"/>
+        
+
+    </Grid>
+</Window>
